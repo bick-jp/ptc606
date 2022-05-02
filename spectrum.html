@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <script src="p5.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <title>Grip and Pitch</title>
+  </head>
+  <body>
+    <main id="wrapper">
+      <h1>Activity: try it yourself</h1>
+      <p>In this activity, let's try different grips to play low, middle, and high pitch sound using spectrum analyzer. Spectrum analyzer is a tool that you can visually see the pitch of the sound. The y-axis is volume and the x-axis is pitch (frequency in Hz), with lower tones on the left (220Hz) and higher tones on the right (2200Hz).</p>
+      <h2>Procedure</h2>
+      <ol>
+        <li>Allow microphone access if asked.</li>
+        <li>Click "Play" button.</li>
+        <li>Try different grips to play low, middle, and high pitch sound.</li>
+      </ol>
+      <h2>Examples</h2>
+      <p>You can see: (1) the peak in lower frequency (left side) for low pitch, (2) no peaks but flat for middle pitch, and (3) the peak in higer frequenvy (right side) for high pitch.</p>
+      <div class="row">
+        <div class="column">
+          <img src="images/spec-low.jpg" alt="the peak in lower frequency (left side) for low pitch" style="width:100%">
+          <p>1) Low pitch</p>
+        </div>
+        <div class="column">
+          <img src="images/spec-mid.jpg" alt="no peaks but flat for middle pitch" style="width:100%">
+          <p>2) Mid pitch</p>
+        </div>
+        <div class="column">
+          <img src="images/spec-high.jpg" alt="the peak in higer frequenvy (right side) for high pitch" style="width:100%">
+          <p>3) Hich pitch</p>
+        </div>
+      </div>
+      <h2>Spectrum Analyzer</h2> 
+      <section id="cnvSpectrum">
+        <script src="spectrum.js"></script>
+      </section>
+      <p>Showing the range between 220Hz (left) to 2200Hz (right).</p>
+    </main>
+	</body>
+</html>
